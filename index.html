@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.css' integrity='sha512-bR79Bg78Wmn33N5nvkEyg66hNg+xF/Q8NA8YABbj+4sBngYhv9P8eum19hdjYcY7vXk/vRkhM3v/ZndtgEXRWw==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section id="form" class="my-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Inserisci i tuoi dati</h5>
+                    <div class="row row-cols-md-3">
+                        <div class="col mb-3">
+                            <label for="name" class="form-label">Nome passeggero</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="kms" class="form-label">Chilometri</label>
+                            <input type="number" class="form-control" id="kms">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="age" class="form-label">Età passeggero</label>
+                            <select class="form-select" id="age">
+                                <option value="">Adulto</option>
+                                <option value="under">Minorenne</option>
+                                <option value="over">Over 65</option>
+                            </select>  
+                        </div>      
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-primary me-3" id="confirm-button">Conferma</button>
+                    <button class="btn btn-secondary" id="reset-button">Anulla</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ticket" class="my-5 d-none">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/treno.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Il tuo biglietto</h5>
+                            <h3 id="passenger-name">Spartan89</h3>
+                            <div class="row row-cols-md-4">
+                                <div class="col">
+                                    <h6>Tariffa</h6>
+                                    <div id="rate">Tariffa Ordinaria</div>
+                                </div>
+                                <div class="col">
+                                    <h6>Carrozza</h6>
+                                    <div id="coach">9</div>
+                                </div>
+                                <div class="col">
+                                    <h6>PNR</h6>
+                                    <div id="pnr">94483</div>
+                                </div>
+                                <div class="col">
+                                    <h6>Prezzo</h6>
+                                    <div id="price">21.00€</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end mt-5">
+                                <button class="btn btn-success">Conferma</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
